@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1000 height=1920 tabindex="-1" style="width: 1000px; height: 1920px; background: #231F20"></canvas>
-    <script src="Build/testagain5.loader.js"></script>
+    <script src="Build/testagain2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/testagain5.data.br",
-        frameworkUrl: "Build/testagain5.framework.js.br",
-        codeUrl: "Build/testagain5.wasm.br",
+        dataUrl: "Build/testagain2.data",
+        frameworkUrl: "Build/testagain2.framework.js",
+        codeUrl: "Build/testagain2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "testkey",
