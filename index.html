@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | Hydroponic vegetable farm ec</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: url('Build/1.146-test-minimal.jpg') center / cover"></canvas>
-    <script src="Build/1.146-test-minimal.loader.js"></script>
+    <canvas id="unity-canvas" width=540 height=960 tabindex="-1" style="width: 540px; height: 960px; background: url('Build/1.146-fix-resolution.jpg') center / cover"></canvas>
+    <script src="Build/1.146-fix-resolution.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,13 +25,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/1.146-test-minimal.data.gz",
-        frameworkUrl: "Build/1.146-test-minimal.framework.js.gz",
-        codeUrl: "Build/1.146-test-minimal.wasm.gz",
+        dataUrl: "Build/1.146-fix-resolution.data.gz",
+        frameworkUrl: "Build/1.146-fix-resolution.framework.js.gz",
+        codeUrl: "Build/1.146-fix-resolution.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Phiraphon",
         productName: "Hydroponic vegetable farm ec",
-        productVersion: "1.146-test-minimal",
+        productVersion: "1.146-fix-resolution",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
